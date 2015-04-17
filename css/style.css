@@ -9,6 +9,7 @@ html {
 body {
 	background-color: #FFF;
 	line-height: 1;
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -30,26 +31,40 @@ body {
 	margin: 0 auto;
 }
 
+
+/* Typography Stuff */
+a {
+	text-decoration: none;
+}
+
+
 /* Navigation */
 .topNav {
 	width: 100%;
-	padding: 1rem;
+	padding: .5rem;
+	line-height: 0;
 	background-color: #FFF;
 	border-bottom: 1px dotted #DDD;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
 }
 
 .topNav > .content {
 	height: 2.375rem;
+	line-height: 0;
 }
 
 .logo {
 	height: 2.375rem;
-	margin: 0;
+	margin-top: .25rem;
 }
 
 .navigation {
 	display: block;
 	float: right;
+	margin-top: 1.25rem;
 }
 
 .navigation li {
@@ -57,11 +72,15 @@ body {
 }
 
 .navigation li > a {
-	color: #666;
+	color: #838994;
 	display: block;
 	font-size: 1.05em;
 	padding: 0 .65em;
 	line-height: .75em;
+}
+
+.navigation li > a:hover {
+	color: #333;
 }
 
 .navigation li:last-child a {
@@ -70,11 +89,34 @@ body {
 
 .active {
 	font-weight: bold;
+	color: #4C5058;
 }
 
 
-/* Typography Stuff */
-a {
-	text-decoration: none;
+.cover {
+	display: block;
+	text-align: center;
+	background-image: url('../img/first-background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 12rem 0;
+	margin-top: 2.375rem;
+	color: #FFF;
+}
+
+.cover h1 {
+
+}
+
+.cover h2 {
+	line-height: 3rem;
+}
+
+.cta-btn {
+	padding: 1rem 2rem;
+	color: #FFF;
+	background-color: red;
+	border-radius: .25rem;
+	line-height: 4rem;
 }
 
