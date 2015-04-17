@@ -1,9 +1,14 @@
-* {
+html {
 	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 body {
 	background-color: #FFF;
+	line-height: 1;
 }
 
 
@@ -20,16 +25,26 @@ body {
 	background-color: rgba(0,0,255,0.4);
 }
 
-
-/* Navigation */
-.topNav {
-	max-width: 63%;
-	padding: .85em 2em;
+.content {
+	width: 46rem;
 	margin: 0 auto;
 }
 
+/* Navigation */
+.topNav {
+	width: 100%;
+	padding: 1rem;
+	background-color: #FFF;
+	border-bottom: 1px dotted #DDD;
+}
+
+.topNav > .content {
+	height: 2.375rem;
+}
+
 .logo {
-	height: 2.4em;
+	height: 2.375rem;
+	margin: 0;
 }
 
 .navigation {
@@ -45,8 +60,12 @@ body {
 	color: #666;
 	display: block;
 	font-size: 1.05em;
-	padding: 0 .5em;
+	padding: 0 .65em;
 	line-height: .75em;
+}
+
+.navigation li:last-child a {
+	padding-right: 0;
 }
 
 .active {
