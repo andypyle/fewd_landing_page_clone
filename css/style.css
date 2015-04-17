@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF;
+}
+
+
+/* Testing utilities. */
+.highlight-red {
+	background-color: rgba(255,0,0,0.4);
+}
+
+.highlight-green {
+	background-color: rgba(0,255,0,0.4);
+}
+
+.highlight-blue {
+	background-color: rgba(0,0,255,0.4);
+}
+
+
+/* Navigation */
+.topNav {
+	max-width: 63%;
+	padding: .85em 2em;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 2.4em;
+}
+
+.navigation {
+	display: block;
+	float: right;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation li > a {
+	color: #666;
+	display: block;
+	font-size: 1.05em;
+	padding: 0 .5em;
+	line-height: .75em;
+}
+
+.active {
+	font-weight: bold;
+}
+
+
+/* Typography Stuff */
+a {
+	text-decoration: none;
+}
+
