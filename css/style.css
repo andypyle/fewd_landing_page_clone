@@ -103,7 +103,7 @@ a {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 12rem 0;
+	padding: 12rem 0 18rem 0;
 	margin-top: 2.375rem;
 	color: #FFF;
 }
@@ -140,18 +140,26 @@ a {
 /* The 'cases' section */
 .cases {
 	text-align: center;
-	padding: 6rem 0;
+	padding: 6rem 0 0rem 0;
 	margin: 0;
+	overflow: auto;
+}
+.cases:after {
+	content: ' ';
+	clear:both;
 }
 
 .cases h1 {
 	font-weight: 300;
 	font-size: 2.75rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1.85rem;
 }
 
 .cases .content {
 	padding: 0;
+	border-bottom: 1px dotted #DDD;
+	padding-bottom: 10rem;
+	overflow: auto;
 }
 
 .icons {
@@ -161,6 +169,11 @@ a {
 	padding: 0;
 	margin: 0;
 	width: 100%;
+}
+
+.icons:after {
+	content: ' ';
+	clear: both;
 }
 
 .icons li {
@@ -179,8 +192,50 @@ a {
 }
 
 .caption h3 {
-	font-size: 1.5rem;
+	font-size: 1.55rem;
 	font-weight: 400;
+	padding-top: 1.55rem;
 }
 
 
+/* The footer */
+
+footer {
+	clear: both;
+	padding: 0rem 0 8rem 0;
+}
+
+footer .content {
+	text-align: center;
+}
+
+footer p.social {
+	padding: .5rem 0;
+}
+
+footer p a {
+	border-radius: 4rem;
+	border: 1px solid #eee;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 0 .5rem;
+}
+
+.twitter {
+	color: #55acee;
+}
+
+.facebook {
+	color: #4c66a4;
+}
+
+.instagram {
+	color: #3f729b;
+}
+
+.copyright {
+	font-size: .9rem;
+	color: #888;
+}
